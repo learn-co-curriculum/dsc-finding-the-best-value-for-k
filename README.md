@@ -18,7 +18,7 @@ By now, you've got a strong understanding of how the K-Nearest Neighbors algorit
 
 In general, the smaller K is, the more our tighter the "fit" of our model. Recall that with supervised learning, we want to fit the data as closely as possible without **_overfitting_**.  If our model pays too much attention to every little detail and makes a very complex decision boundary, then our model has **_overfit_**. Conversely, if our model does not pay much attention to the data, then our model may **_underfit_** the data. 
 
-<img src="fit.png">
+<img src="images/fit.png">
 
 When k is small, any given prediction only takes into account a very small number of points around it to make the prediction. If k is too small, this can end up with a decision boundary that looks like the overfit picture on the right. 
 
@@ -26,7 +26,7 @@ Conversely, as k grows larger, it takes into account more and more points, that 
 
 It's important to try to find the best value for K by iterating over a multiple values and comparing performance at each step. 
 
-<img src='best_k.png'>
+<img src='images/best_k.png'>
 
 As we can see from the image above, `k=1` and `k=3` will provide different results! 
 
@@ -41,7 +41,7 @@ The best way to find an optimal value for K is to choose a minimum and maximum b
 3. Calculating and evaluating a performance metric using the predictions the model made.
 4. Compare the results for every model and find the one with the lowest overall error, or highest overall score!
 
-<img src='knn_plot.png'>
+<img src='images/knn_plot.png'>
 
 A common way to do find the best value for k at a glance is to plot the error for each value of K. Find the value for K where the error is lowest. If this graph continued into higher values of K, we would likely see the error numbers go back up as K increased. 
 
